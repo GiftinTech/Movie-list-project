@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="GiftinTech">
+    <meta name="description" content="My first movie list website.">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sign-in">
+        <h1>Sign in</h1>
+        <form action="https://httpbin.org/get" method="get">
+            <p>
+                <label>
+                    <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                    class="formlabel" 
+                    placeholder="Email" 
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input 
+                    type="password" 
+                    name="password" 
+                    id="password" 
+                    class="formlabel"
+                    placeholder="Password" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                    title="Password must be at least 8 characters long, and include at least one uppercase letter, one lowercase letter, and one number." 
+                    required >
+                </label>
+            </p>
+            <p>
+                <label class="checkboxinput">
+                <input 
+                type="checkbox" 
+                name="rememberMe" 
+                id="rememberMe" 
+                value="Remember me">
+                Remember me
+                </label>
+            </p>
+            <p>
+                <button type="submit" class="btn">Login</button>
+            </p>
+        </form>
+    
+    </section>
+
+    <section class="empty">
+        <h2>Your movie list is empty</h2>
+        <p>
+            <button type="button" class="btn">Add a new movie</button>
+        </p>
+    </section>
+
+    <section class="mymovies">
+        <div class="mymovies-header">
+            <h3>
+                My movies 
+                <i class="material-symbols-outlined add-circle">
+                    add_circle
+                </i>
+            </h3>
+            <p>
+                <a href="#"><span class="logout">Logout</span> 
+                    <i class="material-symbols-outlined logout-icon">
+                    logout</i></a>
+            </p>
+        </div>
+        <div class="grid-container">
+            <figure class="grid-item">
+                <img src="img/Eve.jpeg" alt="Kdramas" title="Eve" loading="lazy">
+                <figcaption class="movie-title"> Eve 
+                    <br>
+                    <span class="movie-year">2022</span></figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="img/Healer.jpeg" alt="Kdramas" title="Healer" loading="lazy">
+                <figcaption class="movie-title"> Healer 
+                    <br>
+                    <span class="movie-year">2014</span></figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="img/knightflower.jpeg" alt="Kdramas" title="Knight Flower" loading="lazy">
+                <figcaption class="movie-title">Knight Flower
+                    <br>
+                    <span class="movie-year">2024</span></figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="img/loveincontract.jpeg" alt="Kdramas" title="Love in Contract" loading="lazy">
+                <figcaption class="movie-title"> Love in Contract
+                    <br>
+                    <span class="movie-year">2022</span></figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="img/marrymyhusband.jpeg" alt="Kdramas" title="Marry My Husband" loading="lazy">
+                <figcaption class="movie-title"> Marry My Husband 
+                    <br>
+                    <span class="movie-year">2024</span></figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="img/Penthouse.jpeg" alt="Kdramas" title="The Penthouse: War in Life" loading="lazy">
+                <figcaption class="movie-title"> The Penthouse: War in Life 
+                    <br>
+                    <span class="movie-year">2020</span></figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="img/queenoftears.jpeg" alt="Kdramas" title="Queen of Tears" loading="lazy">
+                <figcaption class="movie-title"> Queen of Tears 
+                    <br>
+                    <span class="movie-year">2024</span></figcaption>
+            </figure>
+            <figure class="grid-item">
+                <img src="img/theglory.jpeg" alt="Kdramas" title="The Glory" loading="lazy">
+                <figcaption class="movie-title"> The Glory
+                    <br>
+                    <span class="movie-year">2022</span></figcaption>
+            </figure>
+        </div>
+        <ul>
+            <li><a href="#">Prev</a></li>
+            <li><a href="#"><span class="list-2">1</span></a></li>
+            <li><a href="#"><span class="list-3">2</span></a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+    </section>
+
+    <section class="new-movie">
+        <h2 class="last-h2">Create a new movie</h2>
+        <div class="flex-group">
+            <div class="drop-img">
+                <span class="material-symbols-outlined">
+                    download
+                </span>
+                <p>Drop an image here</p>
+            </div>
+            <p>
+                <label>
+                    <input type="text" 
+                    name="title" id="title" 
+                    class="secondformlabel second-label" 
+                    placeholder="Title" required>
+                </label>
+                <br>
+                <label>
+                    <input type="number" 
+                    name="year" 
+                    id="year" 
+                    class="secondformlabel year-input" 
+                    placeholder="Publishing year" required>
+                </label>
+            </p>
+            <div></div>
+            <p class="btn-group">
+                <button type="button" class="last-btn">Cancel</button>
+                <button type="submit" class="last-btn">Submit</button>
+            </p>
+        </div>
+    </section>
+
+    <section class="edit">
+        <h2 class="last-h2">Edit</h2>
+        <div class="flex-group">
+            <div class="drop-img">
+                <span class="material-symbols-outlined">
+                    download
+                </span>
+                <p>Drop other image here</p>
+            </div>
+            <p>
+                <label>
+                    <input type="text" 
+                    name="secondtitle" 
+                    id="secondtitle" 
+                    class="secondformlabel second-label" 
+                    placeholder="Title" required>
+                </label>
+                <br>
+                <label for="secondyear">
+                    <input type="number" 
+                    name="secondyear" 
+                    id="secondyear" 
+                    class="secondformlabel year-input" 
+                    placeholder="Publishing year" required>
+                </label>
+            </p>
+            <div></div>
+            <p class="btn-group">
+                <button type="button" class="last-btn">Cancel</button>
+                <button type="button" class="last-btn">Update</button>
+            </p>
+        </div>
+            <p class="copyright">&copy; GiftinTech</p>
+    </section>
+</body>
+</html>
