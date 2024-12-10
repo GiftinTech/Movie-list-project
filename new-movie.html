@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="GiftinTech">
+    <meta name="description" content="This is the new movie section.">
+    <title>New Movie Section</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="new-movie" id="new-movie">
+        <h2 class="last-h2">Create a new movie</h2>
+        <div class="flex-group">
+            <div class="drop-img">
+                <span class="material-symbols-outlined">
+                    download
+                </span>
+                <p>Drop an image here</p>
+            </div>
+            <p>
+                <label>
+                    <input type="text" 
+                    name="title" id="title" 
+                    class="secondformlabel second-label" 
+                    placeholder="Title" required>
+                </label>
+                <br>
+                <label>
+                    <input type="number" 
+                    name="year" 
+                    id="year" 
+                    class="secondformlabel year-input" 
+                    placeholder="Publishing year" required>
+                </label>
+            </p>
+            <div></div>
+            <a href="mymovies.html" class="btn-group">
+                <button type="button" class="last-btn">Cancel</button>
+                <button type="submit" class="last-btn">Submit</button>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

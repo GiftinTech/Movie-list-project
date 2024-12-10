@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <section class="sign-in">
+    <section class="sign-in" id="sign-in">
         <h1>Sign in</h1>
-        <form action="https://httpbin.org/get" method="get">
+        <form action="empty.html">
             <p>
                 <label>
                     <input 
@@ -24,7 +24,7 @@
                     id="email"
                     class="formlabel" 
                     placeholder="Email" 
-                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                 </label>
             </p>
             <p>
@@ -36,8 +36,7 @@
                     class="formlabel"
                     placeholder="Password" 
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-                    title="Password must be at least 8 characters long, and include at least one uppercase letter, one lowercase letter, and one number." 
-                    required >
+                    title="Password must be at least 8 characters long, and include at least one uppercase letter, one lowercase letter, and one number.">
                 </label>
             </p>
             <p>
@@ -50,21 +49,22 @@
                 Remember me
                 </label>
             </p>
-            <p>
-                <button type="submit" class="btn">Login</button>
-            </p>
+            <a href="empty.html">
+                <button tyae="submit" class="btn">Login</button>
+            </a>
         </form>
     
     </section>
 
-    <section class="empty">
+    <!-- 
+    <section class="empty" id="empty">
         <h2>Your movie list is empty</h2>
         <p>
-            <button type="button" class="btn">Add a new movie</button>
+            <button type="button" class="btn"><a href="#new-movie">Add a new movie</a></button>
         </p>
     </section>
 
-    <section class="mymovies">
+    <section class="mymovies" id="my-movies">
         <div class="mymovies-header">
             <h3>
                 My movies 
@@ -136,7 +136,7 @@
         </ul>
     </section>
 
-    <section class="new-movie">
+    <section class="new-movie" id="new-movie">
         <h2 class="last-h2">Create a new movie</h2>
         <div class="flex-group">
             <div class="drop-img">
@@ -163,13 +163,13 @@
             </p>
             <div></div>
             <p class="btn-group">
-                <button type="button" class="last-btn">Cancel</button>
-                <button type="submit" class="last-btn">Submit</button>
+                <button type="button" class="last-btn"><a href="#my-movies">Cancel</a></button>
+                <button type="submit" class="last-btn"><a href="#my-movies">Submit</a></button>
             </p>
         </div>
     </section>
 
-    <section class="edit">
+    <section class="edit" id="edit">
         <h2 class="last-h2">Edit</h2>
         <div class="flex-group">
             <div class="drop-img">
@@ -203,5 +203,6 @@
         </div>
             <p class="copyright">&copy; GiftinTech</p>
     </section>
+     -->
 </body>
 </html>
