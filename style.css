@@ -611,7 +611,7 @@ a {
     text-align: left;
     padding: 0 0.25rem;
     margin-left: 6rem;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .flex-group {
@@ -652,6 +652,7 @@ a {
     width: 95vw;
     padding-bottom: 1rem;
     padding-left: 4rem;
+    margin-bottom: 50px;
 }
 
 .last-btn {
